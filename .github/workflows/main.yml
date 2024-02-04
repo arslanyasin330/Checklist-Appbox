@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: checklist
     env:
-      CYPRESS_LOGIN_USERNAME: ${{ secrets.CYPRESS_LOGIN_EMAIL }}
+      CYPRESS_LOGIN_EMAIL: ${{ secrets.CYPRESS_LOGIN_EMAIL }}
       CYPRESS_LOGIN_PASSWORD: ${{ secrets.CYPRESS_LOGIN_PASSWORD }}
     
     steps:
