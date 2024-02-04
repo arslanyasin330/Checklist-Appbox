@@ -15,7 +15,7 @@ describe('Verify checklist functionalities working as expected', () => {
          * username - environment variable
          * password - environment variable
          */
-        cy.login(Cypress.env('username'), Cypress.env('password'));
+        cy.login(Cypress.env("LOGIN_EMAIL"), Cypress.env("LOGIN_PASSWORD"));
         cy.url().should("include", HomeTestData.url);
         homePage.openEpic(HomeTestData.epicTitle);
     })
